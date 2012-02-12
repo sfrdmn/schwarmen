@@ -1,3 +1,7 @@
-#toben und stompen
+### simple open-tok hello world for irc friends at #musichackday sanfran
+git clone git://github.com/coleGillespie/schwarmen.git
+sudo node app
 
-### simple open-tok sample for irc friends at #musichackday sanfran 
+### TODO
+integrate popcorn js
+
