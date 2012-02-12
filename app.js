@@ -3,7 +3,7 @@ var app = require('http').createServer(handler)
   , fs = require('fs')
   , opentok = require('opentok');
 
-app.listen(80);
+app.listen(3666);
 
 function handler (req, res) {
   fs.readFile(__dirname + '/index.html', function (err, data) {
@@ -31,8 +31,8 @@ io.sockets.on('connection', function (socket) {
 
 
 // OpenTok Variables
-var OPENTOK_API_KEY = '413302',   // Replace with your API key
-  OPENTOK_API_SECRET = 'fc512f1f3c13e3ec3f590386c986842f92efa7e7',    // Replace with your API secret
+var OPENTOK_API_KEY = '11831892',   // Replace with your API key
+  OPENTOK_API_SECRET = 'fca53eee7ffeb8f3ddaeed2b2f91fd1a61df4527',    // Replace with your API secret
 
   // OpenTok SDK
   ot = new opentok.OpenTokSDK(OPENTOK_API_KEY, OPENTOK_API_SECRET),
