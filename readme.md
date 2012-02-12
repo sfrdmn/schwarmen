@@ -1,13 +1,13 @@
-#Simple open-tok sample for irc friends at #musichackday sanfran
+#open-tok for #smalldata friends at #musichackday sanfran
 
-####Get Started:
+#### Get Started:
 git clone git://github.com/coleGillespie/schwarmen.git
 sudo node app
 
-####TODO:
+#### TODO:
 integrate popcorn js
 
-####Credit goes to:
+#### Credit goes to:
 http://www.seanfridman.com
 http://www.kristinaschneider.com
 http://www.mumm.me/
