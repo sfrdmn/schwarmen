@@ -178,7 +178,7 @@
           var divId = 'opentok_publisher';
           // Pass in TRUE since this is a publisher
           OT_LayoutContainer.addStream(divId, true);
-          session.publish(divId, { wmode: window });
+          session.publish(divId, { wmode: "window" });
         }
       var subscribeToStreams = function (streams) {
           // For each stream
