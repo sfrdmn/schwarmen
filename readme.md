@@ -3,7 +3,7 @@
 #### A simple foundation for handling multiple opentok sessions
 
 #### Get Started:
-* super simple start up
+*        super simple start up
         git clone git://github.com/coleGillespie/schwarmen.git
         cd schwarmen
         sudo node app ( or change port !== 80 for no sudo [ node app ] )
