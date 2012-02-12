@@ -103,6 +103,7 @@
          * @param {bool} publisher True if the stream divId being passed in is a publisher.  False if the stream divId is a subscriber.
          */
         addStream: function (divId, publisher) {
+					console.log('addStream()');	
           var container = document.createElement("div");
           if (publisher) {
             // Put the publisher object in front to allow clicking permissions dialog
@@ -119,6 +120,7 @@
          * @param {String} subscriberId The ID of the subscriber object from the stream to be removed.
          */
         removeStream: function (subscriberId) {
+					console.log('removeStream()');	
           // Gets the container that holds the flash object (stream) and removes it from the page
           var obj = document.getElementById(subscriberId);
           var container = obj.parentNode;
@@ -176,7 +178,7 @@
           var divId = 'opentok_publisher';
           // Pass in TRUE since this is a publisher
           OT_LayoutContainer.addStream(divId, true);
-          session.publish(divId);
+          session.publish(divId, { wmode: window });
         }
       var subscribeToStreams = function (streams) {
           // For each stream
@@ -217,7 +219,7 @@
         }
       };
     }();
-  var socket = io.connect('http://localhost');
+  var socket = io.connect(/*'http://localhost'*/);
   socket.on('message', function (o) {
     var m = JSON.parse(o)
     OT_Widget.startWidget("widgetContainer", 320, 180, m.apiKey, m.sessionId, m.token);

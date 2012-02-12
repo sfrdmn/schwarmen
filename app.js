@@ -44,7 +44,7 @@ var OPENTOK_API_KEY = '11831892',   // Replace with your API key
   MAX_SESSION_CONNECTIONS = 3,  // Maximum number of client connections we want in a given session  
   session_map = {},       // Hash for getting the session of a given client
   ot_sessions = new Array();    // Array for holding all sessions we have generated
-
+	
 // Finds an available session for the client to connect to
 function getSession(client) {
   console.log('   mhdsf - Find an available session for the client to connect to');
